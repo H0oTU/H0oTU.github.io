@@ -11,7 +11,7 @@ body {
     font-size: 1.1rem;
     margin: 0;
     min-height: 100vh;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /*inspired by #073 @ https://webgradients.com/ */
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* #073 @ https://webgradients.com/ */
     font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     color: #222;
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 header, .nav-bar {
     width: 100%;
-    background: rgba(157,34,53,0.95); /* Cherry with opacity */
+    background: rgba(157,34,53,0.95); /* Temple Cherry */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,8 +46,6 @@ header nav {
     overflow: hidden;
 }
 
-
-
 .nav-link {
     color: #fff;
     background: transparent;
@@ -62,18 +60,19 @@ header nav {
     box-shadow: 0 1px 4px rgba(157,34,53,0.05);
     white-space: nowrap;
     display: flex;
+    line-height: normal;
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
     flex-shrink: 1;
 }
+
 .nav-link:hover, .nav-link:focus {
     background: #fff;
     color: #9D2235;
     box-shadow: 0 2px 8px rgba(157,34,53,0.15);
 }
-
 
 .logo {
     height: clamp(1.2rem, 6vw, 2.2rem);
@@ -84,7 +83,6 @@ header nav {
     box-shadow: 0 1px 4px rgba(157,34,53,0.08);
     transition: height 0.2s, max-width 0.2s;
 }
-
 
 .footer {
     background: rgba(157,34,53,0.95);
@@ -135,6 +133,7 @@ button, .btn {
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     box-shadow: 0 1px 4px rgba(157,34,53,0.08);
 }
+
 button:hover, .btn:hover, button:focus, .btn:focus {
     background: #fff;
     color: #9D2235;
