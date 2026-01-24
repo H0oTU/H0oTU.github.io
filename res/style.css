@@ -11,7 +11,7 @@ body {
     font-size: 1.1rem;
     margin: 0;
     min-height: 100vh;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* #073 @ https://webgradients.com/ */
+    background-image: linear-gradient(to top, #602EC2 0%, #63FFFC 100%); /* #073 @ https://webgradients.com/ */
     font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     color: #222;
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 header, .nav-bar {
     width: 100%;
-    background: rgba(157,34,53,0.95); /* Temple Cherry */
+    background: #2D145C; /* Temple Cherry */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,8 +69,8 @@ header nav {
 }
 
 .nav-link:hover, .nav-link:focus {
-    background: #fff;
-    color: #9D2235;
+    background: #67A9FF;
+    color: #2D145C;
     box-shadow: 0 2px 8px rgba(157,34,53,0.15);
 }
 
@@ -85,7 +85,7 @@ header nav {
 }
 
 .footer {
-    background: rgba(157,34,53,0.95);
+    background: #2D145C;
     color: #fff;
     text-align: center;
     padding: 1rem 0.5rem;
@@ -108,7 +108,7 @@ main, .content {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #9D2235;
+    color: #2D145C;
     font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     margin-top: 0;
     margin-bottom: 0.75rem;
@@ -122,7 +122,7 @@ p, ul, ol {
 }
 
 button, .btn {
-    background: #9D2235;
+    background: #2D145C;
     color: #fff;
     border: none;
     border-radius: 2rem;
@@ -136,7 +136,7 @@ button, .btn {
 
 button:hover, .btn:hover, button:focus, .btn:focus {
     background: #fff;
-    color: #9D2235;
+    color: #2D145C;
     box-shadow: 0 2px 8px rgba(157,34,53,0.15);
 }
 

@@ -3,7 +3,7 @@
 // SPA content for each page
 const pages = {
     home: `
-        <h1>HOoT ~ <em>Hacking Organization of Temple</em></h1>
+        <h1>HOoT ~ <em>Hacker Organization of Temple</em></h1>
         <p>Welcome to Temple University's cybersecurity and hacking organization.<br>
         <strong>Here to hack? Join us!</strong></p>
       `,
@@ -23,7 +23,7 @@ const pages = {
         <h1>Events</h1>
         <p>Check out our upcoming events and past highlights:</p>
         <ul>
-          <li><strong>CTFs:</strong> See <a href="#contact">Discord</a> for details</li>
+          <li><strong>CTFs:</strong> See <a href="#socials">Discord</a> for details</li>
         </ul>
       `,
     resources: `
@@ -32,11 +32,12 @@ const pages = {
           <br/> Coming soon!
         </p>
       `,
-    contact: `
-        <h1>Contact</h1>
-        <p>Want to get in touch? Join our Discord and follow us on Instagram!
-        <br/><br/><a href="https://discord.gg/NQpFsR8xMu" target="_blank"><img class=img src="res/discord.png"/></a>
-        <a href="https://www.instagram.com/hoot.temple/" target="_blank"><img class=img src="res/instagram.png"/></a>
+    socials: `
+        <h1>Socials</h1>
+        <p>Want to get in touch? Join our Discord, subscribe to our YouTube, and follow us on Instagram!
+        <br/><br/><a href="https://discord.gg/NQpFsR8xMu" target="_blank"><img class=img src="res/media/discord.png"/></a>
+        <a href="https://www.youtube.com/@HOOTtu" target="_blank"><img class=img src="res/media/youtube.png"/></a>
+        <a href="https://www.instagram.com/hoot.temple/" target="_blank"><img class=img src="res/media/instagram.png"/></a>
         </p>
       `
 };
