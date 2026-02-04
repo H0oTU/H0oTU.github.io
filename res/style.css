@@ -1,9 +1,15 @@
 html {
     font-size: 16px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /*font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;*/
+    font-weight: 400;
+    font-style: normal;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -12,20 +18,21 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #242124;
-    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     color: #CCCACA;
     display: flex;
     flex-direction: column;
 }
 
-header, .nav-bar {
+header,
+.nav-bar {
     width: 100%;
-    background: #2D145C; /* Temple Cherry */
+    background: #2D145C;
+    /* Temple Cherry */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1rem;
-    box-shadow: 0 2px 8px rgba(157,34,53,0.08);
+    box-shadow: 0 2px 8px rgba(157, 34, 53, 0.08);
     position: relative;
     z-index: 10;
 }
@@ -57,7 +64,7 @@ header nav {
     font-size: clamp(0.7rem, 2vw, 1.1rem);
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     margin: 0.15rem 0.1rem;
-    box-shadow: 0 1px 4px rgba(157,34,53,0.05);
+    box-shadow: 0 1px 4px rgba(157, 34, 53, 0.05);
     white-space: nowrap;
     display: flex;
     line-height: normal;
@@ -68,10 +75,11 @@ header nav {
     flex-shrink: 1;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     background: #67A9FF;
     color: #2D145C;
-    box-shadow: 0 2px 8px rgba(157,34,53,0.15);
+    box-shadow: 0 2px 8px rgba(157, 34, 53, 0.15);
 }
 
 .logo {
@@ -80,7 +88,7 @@ header nav {
     max-width: clamp(2.5rem, 15vw, 6rem);
     margin-right: 0.75rem;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 4px rgba(157,34,53,0.08);
+    box-shadow: 0 1px 4px rgba(157, 34, 53, 0.08);
     transition: height 0.2s, max-width 0.2s;
 }
 
@@ -93,10 +101,11 @@ header nav {
     position: relative;
     width: 100%;
     margin-top: auto;
-    box-shadow: 0 -2px 8px rgba(157,34,53,0.08);
+    box-shadow: 0 -2px 8px rgba(157, 34, 53, 0.08);
 }
 
-main, .content {
+main,
+.content {
     flex: 1 1 auto;
     width: 100%;
     max-width: 48rem;
@@ -107,21 +116,28 @@ main, .content {
     align-items: stretch;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #67A9FF;
-    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     margin-top: 0;
     margin-bottom: 0.75rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
     margin-bottom: 1.25rem;
     line-height: 1.7;
 }
 
-button, .btn {
+button,
+.btn {
     background: #2D145C;
     color: #fff;
     border: none;
@@ -131,46 +147,58 @@ button, .btn {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 1px 4px rgba(157,34,53,0.08);
+    box-shadow: 0 1px 4px rgba(157, 34, 53, 0.08);
 }
 
-button:hover, .btn:hover, button:focus, .btn:focus {
+button:hover,
+.btn:hover,
+button:focus,
+.btn:focus {
     background: #fff;
     color: #2D145C;
-    box-shadow: 0 2px 8px rgba(157,34,53,0.15);
+    box-shadow: 0 2px 8px rgba(157, 34, 53, 0.15);
 }
 
-img, video {
+img,
+video {
     max-width: 4rem;
     height: auto;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 4px rgba(157,34,53,0.08);
+    box-shadow: 0 1px 4px rgba(157, 34, 53, 0.08);
 }
 
 @media (min-width: 48rem) {
     html {
         font-size: 18px;
     }
-    .nav-bar, header {
+
+    .nav-bar,
+    header {
         padding: 1.25rem 2.5rem;
     }
+
     .logo {
         height: 2.8rem;
         max-width: 8rem;
         margin-right: 1.5rem;
     }
+
     header nav {
         gap: 1rem;
         flex-wrap: nowrap;
     }
+
     .nav-link {
         font-size: 1.2rem;
         padding: 1rem 2rem;
     }
-    main, .content {
+
+    main,
+    .content {
         padding: 2.5rem 2rem 3.5rem 2rem;
         max-width: 64rem;
     }
+
     .footer {
         font-size: 1.1rem;
         padding: 1.5rem 0.5rem;
