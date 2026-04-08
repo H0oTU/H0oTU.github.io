@@ -21,10 +21,7 @@ const pages = {
       `,
     events: `
         <h1>Events</h1>
-        <p>Check out our upcoming events and past highlights:</p>
-        <ul>
-          <li><strong>CTFs:</strong> See <a href="#socials">Discord</a> for details</li>
-        </ul>
+        <p>FIRST EVENT: 4/13 <b><i>Murder at OSINT City</i></b> - details coming soon...🦉</p>
       `,
     resources: `
         <h1>Blog & Resources</h1>
@@ -35,9 +32,9 @@ const pages = {
     socials: `
         <h1>Socials</h1>
         <p>Want to get in touch? Join our Discord, subscribe to our YouTube, and follow us on Instagram!
-        <br/><br/><a href="https://discord.gg/NQpFsR8xMu" target="_blank"><img class=img src="res/media/discord.png"/></a>
-        <a href="https://www.youtube.com/@HOOTtu" target="_blank"><img class=img src="res/media/youtube.png"/></a>
-        <a href="https://www.instagram.com/hoot.temple/" target="_blank"><img class=img src="res/media/instagram.png"/></a>
+        <br/><br/><a href="https://discord.gg/NQpFsR8xMu" target="_blank"><img class=img src="res/media/discord.png"/></a> &emsp;
+        <a href="https://www.youtube.com/@HOOTtu" target="_blank"><img class=img src="res/media/youtube.png"/></a> &emsp;
+        <a href="https://www.instagram.com/hoot.temple/" target="_blank"><img class=img src="res/media/instagram.png"/></a> &emsp;
         </p>
       `
 };
