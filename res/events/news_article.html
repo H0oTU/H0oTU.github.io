@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; padding: 20px; }
+  .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  
+  .news-section { font-family: 'Georgia', serif; color: #333; line-height: 1.6; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
+  .news-headline { font-size: 28px; font-weight: bold; margin-bottom: 10px; color: #1a1a1a; }
+  .news-meta { font-size: 12px; color: #666; margin-bottom: 15px; }
+  .ad-box { background: #fff8e1; border: 1px dashed #ffb300; padding: 15px; margin: 20px 0; text-align: center; font-family: 'Arial', sans-serif; }
+  .ad-title { font-weight: bold; color: #d35400; margin-bottom: 5px; }
+  .lookup-input { padding: 8px; border: 1px solid #ccc; width: 60%; }
+  .lookup-btn { padding: 8px 15px; background: #d35400; color: white; border: none; cursor: pointer; }
+  .lookup-result { margin-top: 10px; font-style: italic; color: #555; display: none; }
+
+  .phone-interface { font-family: 'Courier New', monospace; background: #000; color: #0f0; padding: 15px; border-radius: 8px; margin-top: 20px; position: relative; }
+  .phone-header { border-bottom: 1px solid #333; padding-bottom: 5px; margin-bottom: 10px; font-weight: bold; }
+  .transaction-item, .call-item { font-size: 12px; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .highlight { color: #ffeb3b; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="news-section">
+    <h1 class="news-headline">Tragedy Near Erie Av: Young Professional Found Deceased</h1>
+    <div class="news-meta">By: Reh Porter | April 13, 2026 | 10:42 AM EST</div>
+    <div><img src="/res/events/tape.png" alt="Police Tape" style="max-width: 100%; height: auto;"></div>
+    <div class="news-meta">Police tape blocking off the crime scene</div>
+    <p>A 21-year-old victim, identified locally as <strong>Colden Walker</strong>, was found deceased near a corporate office in Philadelphia early morning today around 8:30 AM. Authorities have named a 26-year-old attorney, <strong>Ryan Anderson</strong>, as the primary person of interest.</p>
+    
+    <div class="ad-box">
+      <div class="ad-title">🔍🦉 Lost Contact? Find Them Now! HooIsIt ™️</div>
+      <p>Curious? Enter a phone number below to check public records instantly.</p>
+      <input type="text" id="phoneLookup" class="lookup-input" placeholder="e.g. XXX-XXX-XXXX">
+      <button onclick="performLookup()" class="lookup-btn">Search</button>
+      <div id="lookupResult" class="lookup-result"></div>
+    </div>
+
+    <p>Police are currently reviewing evidence, including digital footprints and witness statements, to piece together the timeline of events leading up to the incident.
+      Anyone with information on the incident is urged to contact the Philadelphia Police Department.
+    </p>
+  </div>
+
+  <div style="
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+">
+  <h2 style="text-align: center; color: #333; margin-bottom: 30px;">EXCLUSIVE INFORMATION: Phone Logs</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+    <div style="
+      width: 320px;
+      height: 640px;
+      background: linear-gradient(to bottom, #000000, #1c1c1e);
+      border-radius: 40px;
+      border: 8px solid #333;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    ">
+      <div style="height: 44px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box; font-size: 14px; font-weight: 600;">
+        <span>9:42</span>
+        <span>📶 🔋</span>
+      </div>
+
+      <div style="padding: 10px 20px; border-bottom: 1px solid #333; display: flex; align-items: center;">
+        <span style="font-size: 24px; margin-right: 15px;">←</span>
+        <span style="font-size: 18px; font-weight: 600;">Recents</span>
+      </div>
+
+      <div style="flex: 1; overflow-y: auto; padding: 10px;">
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Mom (Home)</div>
+            <div style="font-size: 12px; color: #888;">Apr 11, 6:00 PM</div>
+          </div>
+          <div style="color: #4cd964;">↗️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Dad (Mobile)</div>
+            <div style="font-size: 12px; color: #888;">Apr 11, 9:15 AM</div>
+          </div>
+          <div style="color: #4cd964;">↗️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Unknown (555-123-0123)</div>
+            <div style="font-size: 12px; color: #888;">Apr 10, 2:30 PM</div>
+          </div>
+          <div style="color: #ff3b30;">↙️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Unknown (555-233-9988)</div>
+            <div style="font-size: 12px; color: #888;">Apr 10, 8:45 PM</div>
+          </div>
+          <div style="color: #ff3b30;">↙️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Unknown (555-233-9988)</div>
+            <div style="font-size: 12px; color: #888;">Apr 9, 7:20 PM</div>
+          </div>
+          <div style="color: #ff3b30;">↙️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Unknown (555-233-9988)</div>
+            <div style="font-size: 12px; color: #888;">Apr 8, 11:05 AM</div>
+          </div>
+          <div style="color: #ff3b30;">↙️</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 12px 0;">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Work Line</div>
+            <div style="font-size: 12px; color: #888;">Apr 7, 5:00 PM</div>
+          </div>
+          <div style="color: #4cd964;">↗️</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="
+      width: 320px;
+      height: 640px;
+      background: linear-gradient(to bottom, #000000, #1c1c1e);
+      border-radius: 40px;
+      border: 8px solid #333;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    ">
+      <div style="height: 44px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box; font-size: 14px; font-weight: 600;">
+        <span>9:43</span>
+        <span>📶 🔋</span>
+      </div>
+
+      <div style="padding: 10px 20px; border-bottom: 1px solid #333; display: flex; align-items: center;">
+        <span style="font-size: 24px; margin-right: 15px;">←</span>
+        <span style="font-size: 18px; font-weight: 600;">Your Wallet Activity</span>
+      </div>
+
+      <div style="flex: 1; overflow-y: auto; padding: 10px;">
+        <div style="margin-bottom: 20px;">
+          <div style="font-size: 12px; color: #888; margin-bottom: 10px; text-transform: uppercase;">April 2026</div>
+          
+          <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #3a3a3c; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">🍽️</div>
+              <div>
+                <div style="font-weight: 600; font-size: 15px;">Suraya Restaurant</div>
+                <div style="font-size: 12px; color: #888;">Apr 7, 9:40 PM</div>
+              </div>
+            </div>
+            <div style="font-weight: 600;">-$145.00</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #3a3a3c; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">💍</div>
+              <div>
+                <div style="font-weight: 600; font-size: 15px;">Diamonds R Us</div>
+                <div style="font-size: 12px; color: #888;">Apr 7, 5:00 PM</div>
+              </div>
+            </div>
+            <div style="font-weight: 600;">-$2,400.00</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #3a3a3c; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">🛒</div>
+              <div>
+                <div style="font-weight: 600; font-size: 15px;">Whole Foods Market</div>
+                <div style="font-size: 12px; color: #888;">Apr 3, 10:30 AM</div>
+              </div>
+            </div>
+            <div style="font-weight: 600;">-$42.50</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #3a3a3c; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">⛽</div>
+              <div>
+                <div style="font-weight: 600; font-size: 15px;">Shell Station</div>
+                <div style="font-size: 12px; color: #888;">Apr 2, 3:15 PM  </div>
+              </div>
+            </div>
+            <div style="font-weight: 600;">-$35.00</div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; padding: 12px 0;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #3a3a3c; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 20px;">☕</div>
+              <div>
+                <div style="font-weight: 600; font-size: 15px;">Starbucks</div>
+                <div style="font-size: 12px; color: #888;">Apr 1, 8:20 AM</div>
+              </div>
+            </div>
+            <div style="font-weight: 600;">-$6.25</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<script>
+  function performLookup() {
+    const input = document.getElementById('phoneLookup').value;
+    const resultDiv = document.getElementById('lookupResult');
+    
+    if(input.length < 5) {
+      resultDiv.style.display = 'block';
+      resultDiv.innerHTML = "Please enter a valid number.";
+      return;
+    }
+
+    const targetNumber = "555-233-9988"; 
+    
+    resultDiv.style.display = 'block';
+    if(input === targetNumber) {
+      resultDiv.innerHTML = "<strong>Match Found:</strong> Associated with 'Luana C.' (Private Listing). Status: Active. @tsneulfni on Instagram.";
+    } else {
+      resultDiv.innerHTML = "No public records found for this number.";
+    }
+  }
+</script>
+
+</body>
+</html>

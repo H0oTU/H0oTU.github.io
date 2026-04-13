@@ -21,7 +21,8 @@ const pages = {
       `,
     events: `
         <h1>Events</h1>
-        <p>FIRST EVENT: 4/13 <b><i>Murder at OSINT City</i></b> - <a style="color: #61a8ff; text-decoration: none;" href="https://app.suitable.co/institution/8302/activities/637206" target="_blank">Sign up here</a>, more details coming soon...🦉</p>
+        <p><b><i>4/13: Murder at OSINT City</i></b> - <a style="color: #61a8ff; text-decoration: none;" href="https://app.suitable.co/institution/8302/activities/637206" target="_blank">Sign up here</a>
+        <br/> What happened in <a style="color: #61a8ff; text-decoration: none;" href="res/events/news_article.html" target="_blank">OSINT City? </a></p>
       `,
     resources: `
         <h1>Blog & Resources</h1>
